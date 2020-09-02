@@ -1,11 +1,19 @@
-import React from 'react';
+import React from 'react'
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Home from './components/pages/Home';
+import Editais from './components/pages/Editais';
+import Error404 from './components/pages/404';
 
 function App() {
-  return (
-    <div className="App">
-     <h1>Hello, World - Formando Campeões</h1>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <Switch>
+                <Route exact path="/" component={Home}/>
+                <Route path="/editais" component={Editais} />
+                <Route component={Error404} />
+            </Switch>
+        </BrowserRouter>
+    );
 }
 
-export default App; 
+export default App;
