@@ -2,8 +2,7 @@ import React from 'react';
 import Styled from 'styled-components';
 
 const MainHeader = Styled.header`
-    background: #2B4C88;
-    color: #F2F2F2;
+    background: var(--primary-color);
 `;
 
 export default function Header() {
