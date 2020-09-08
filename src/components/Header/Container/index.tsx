@@ -1,5 +1,6 @@
 import React from 'react';
 import Styled from 'styled-components';
+import TopBar from '../TopBar';
 
 const MainHeader = Styled.header`
     background: var(--primary-color);
@@ -8,7 +9,7 @@ const MainHeader = Styled.header`
 export default function Header() {
     return (
         <MainHeader>
-            <h1>Cabeçalho</h1>
+            <TopBar/>
         </MainHeader>
     );
 }
