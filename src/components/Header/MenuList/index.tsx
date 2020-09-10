@@ -8,7 +8,7 @@ const MenuList = Styled.ul`
     li {
         color: var(--background-gray);
         margin-bottom: 1rem;
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
 
     @media(min-width: 768px) {
@@ -16,7 +16,7 @@ const MenuList = Styled.ul`
             margin: 0px;
             
             li {
-                margin-left: 1rem;
+                margin-left: 1.6rem;
                 margin-bottom: 0;
                 color: var(--background);
             }

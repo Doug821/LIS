@@ -8,7 +8,7 @@ const TopBarContainer = Styled.div`
     display: flex;
     align-items: center;
     background: var(--primary-dark);
-    height: 4rem;
+    height: 6rem;
 `;
 
 export default function TopBar() {
