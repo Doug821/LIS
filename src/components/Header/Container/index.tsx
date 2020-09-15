@@ -1,17 +1,19 @@
 import React from 'react';
 import Styled from 'styled-components';
-import Banner from '../../Banner';
 import TopBar from '../TopBar';
+import Banner, { BannerProps } from '../Banner'
 
 const MainHeader = Styled.header`
     background: var(--primary-color);
 `;
 
-export default function Header() {
+const Header: React.FC<BannerProps> = (props) => {
     return (
         <MainHeader>
             <TopBar/>
-            <Banner/>
+            <Banner {...props}/>
         </MainHeader>
     );
 }
+
+export default Header;
