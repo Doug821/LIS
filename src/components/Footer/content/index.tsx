@@ -5,7 +5,10 @@ import { FaTwitter, FaFacebookF } from 'react-icons/fa';
 import Styled from 'styled-components';
 
 const Info = Styled.div`
-
+    @media(min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+    }
 `;
 
 const FooterData = Styled.div`
@@ -15,7 +18,12 @@ const FooterData = Styled.div`
     text-align: center;
     color: var(--background);
     font-family: 'Poppins', sans-serif;
-    `;
+
+    @media(min-width: 768px) {
+        text-align: left;
+        width: 30%;
+    }
+`;
 
 const Content = Styled.section`
     display: flex;
@@ -24,6 +32,15 @@ const Content = Styled.section`
 
     ${FooterData} {
         border-bottom: 1px solid var(--background-gray);
+    }
+
+    @media(min-width: 768px) {
+        width: 90%;
+        margin-top: 30px;
+
+        ${FooterData} {
+            border: none;
+        }
     }
 
 `;
