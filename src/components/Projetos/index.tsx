@@ -8,6 +8,11 @@ const ProjectList = Styled.section`
     font-family: 'Poppins', sans-serif;
     font-size: 1.6rem;
     line-height: 1.6;
+
+    @media(min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+    }
 `;
 
 const ProjectName = Styled.h2`
@@ -26,6 +31,7 @@ const Description = Styled.p`
 const Image = Styled.img`
     height: 300px;
     width: 100%;
+    border-radius: 2%;
 `;
 
 export default function Projetos() {
