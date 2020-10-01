@@ -33,7 +33,8 @@ const Input: React.FC<InputProps> = ({name, label, ...rest}) => {
             <InputBox
                 id={name}
                 name={name}
-            ></InputBox>
+                {...rest}
+            />
         </InputContainer>
     );
 }
